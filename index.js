@@ -15,7 +15,7 @@ const database = await mysql.createConnection({
   database: "MindaugasA",
 });
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
